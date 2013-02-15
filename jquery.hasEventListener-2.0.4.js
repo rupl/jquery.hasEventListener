@@ -110,7 +110,7 @@
 
     } : function (element) {
 
-        return $[DATA](element, EVENTS);
+        return $[DATA](element, EVENTS) || $["_"+DATA](element, EVENTS);
 
     };
 
